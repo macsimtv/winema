@@ -56,7 +56,6 @@ img, svg {
 }
 .movies .movie {
   height: 350px;
-  padding-bottom: 20px;
 }
 .movies .movie .movie__container {
   height: 100%;

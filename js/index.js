@@ -23,7 +23,7 @@ const moviesDisplay = async () => {
         `
       <div class="movie">
         <div class="movie__container">
-          <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.original_title}" />
+          ${movie.poster_path !== null ? `<img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.original_title}" />` : `<img src="/assets/img/placeholder.jpg" alt="${movie.original_title}" />`}
           <h2>${movie.original_title}</h2>
         </div>
       </div>
